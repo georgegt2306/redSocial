@@ -41,11 +41,9 @@ Para calcular la distancia entre dos usuarios, realiza una solicitud GET a:
 * usuario_destino: usuario de destino.
 
 ### Ejemplo de solicitud
-    ```bash
     http://localhost:3000/usuario/distancia?usuario_origen=userB&usuario_destino=userM
-    ```
+
 ### Ejemplo de respuesta
-    ```json
     {
     "message": "La distancia es: 2",
     "data": {
