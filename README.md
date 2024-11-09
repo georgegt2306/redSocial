@@ -16,6 +16,7 @@ const usuarios = [
   { user: "userB", Following: ["userC", "userJ", "userI", "userE"] },
   { user: "userC", Following: ["userM", "userN", "userJ", "userI", "userE"] },
 ];
+```
 
 ## Instalación
 
