@@ -45,12 +45,11 @@ Para calcular la distancia entre dos usuarios, realiza una solicitud GET a:
 
 ### Ejemplo de respuesta
     {
-    "message": "La distancia es: 2",
-    "data": {
-        "distancia": 2
+        "message": "La distancia es: 2",
+        "data": {
+            "distancia": 2
+        }
     }
-    }
-    ```
 
 ## Notas
 * Si el usuario de origen o de destino no existen, la respuesta será null.
