@@ -28,6 +28,36 @@ Sigue estos pasos para configurar el proyecto en tu máquina local:
     npm install
     ```
 3. Inicia el servidor de desarrollo:
-       ```bash
+    ```bash
     npm start
     ```
+## Uso
+Para calcular la distancia entre dos usuarios, realiza una solicitud GET a:
+    ```bash
+    http://localhost:3000/usuario/distancia?usuario_origen={usuarioA}&usuario_destino={usuarioB}
+    ```
+### Parámetros
+* usuario_origen: usuario de partida.
+* usuario_destino: usuario de destino.
+
+### Ejemplo de solicitud
+    ```bash
+    http://localhost:3000/usuario/distancia?usuario_origen=userB&usuario_destino=userM
+    ```
+### Ejemplo de respuesta
+    ```json
+    {
+    "message": "La distancia es: 2",
+    "data": {
+        "distancia": 2
+    }
+    }
+    ```
+
+## Notas
+* Si el usuario de origen o de destino no existen, la respuesta será null.
+* La API devuelve un código de error 400 si faltan parámetros obligatorios.
+
+```json
+Este `README` detalla el propósito, la configuración y el uso de la API para calcular la distancia entre usuarios.
+```
